@@ -1,0 +1,20 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+
+.Tecno .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  font-size: 30px;
+
+  p {
+    font-family: 'openSans';
+    max-width: 317px;
+    text-align: left;
+  }
+
+  img {
+    margin: 60px 80px;
+  }
+}

@@ -1,0 +1,50 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+
+.Woloxers {
+  margin-top: 60px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    font-size: 30px;
+    text-align: center;
+
+    .workers {
+      background: url('../../../img/woloxers.jpg') no-repeat;
+      width: 58%;
+      padding: 130px 0 70px 0;
+    }
+
+    .plus {
+      font-family: 'openSansBold';
+      font-size: 45px;
+    }
+
+    .twitter {
+      color: white;
+      margin: 40px 0 15px 0;
+      font-size: 19px;
+
+      img {
+        max-width: 50px;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+
+    .btn {
+      border: 2px solid $blueSky;
+      color: white;
+      width: 235px;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 40px;
+      max-width: 500px;
+    }
+  }
+}

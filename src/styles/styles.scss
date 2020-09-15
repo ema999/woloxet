@@ -1,0 +1,89 @@
+@import 'fonts';
+@import 'colors';
+
+body {
+  font-family: 'openSans';
+  height: 100%;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1366px;
+  width: 100%;
+  margin: auto;
+}
+
+menu {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.txtBlueSky {
+  color: $blueSky
+}
+
+.txtGreen {
+  color: $green
+}
+
+.btn {
+  border: solid 1px $blueSky;
+  background: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-family: 'openSansBold';
+  width: 170px;
+  color: $blueSky;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent {
+  border: 2px solid $blueSky;
+  color: white;
+  width: 235px;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.btn-fill {
+  border: 2px solid $blueSky;
+  color: white;
+  width: 235px;
+  font-size: 20px;
+  background-color: $blueSky;
+}
+
+.btn-anim {
+  animation: btn-anim 2s alternate infinite;
+}
+.btn-anim:hover {
+  background-color: $blueSky;
+  color: white;
+}
+.btn-fill:hover {
+  background-color: white;
+  color: $blueSky;
+}
+
+@keyframes btn-anim {
+  from {
+    box-shadow: yellow;
+  }
+  to {
+    box-shadow: yellow;
+  }
+}
