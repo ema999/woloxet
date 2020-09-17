@@ -38,3 +38,19 @@
     padding: 20px;
   }
 }
+
+@media (max-width: 1020px) {
+  .TecnologiesList {
+    .container .list .tech {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .TecnologiesList {
+    .container .list .tech {
+      width: 100%;
+    }
+  }
+}

@@ -7,6 +7,7 @@ import { getTecnologies } from '../../../actions/tecnologies/getTecnologies';
 
 import arrowUp from '../../../img/arrow-up.png';
 import arrowDown from '../../../img/arrow-down.png';
+import spin from '../../../img/spin.gif';
 import './Tecnologies.scss';
 
 const MenuItems = [
@@ -121,7 +122,13 @@ function Tecnologies(props) {
                     </div>
                 </form>
             </div>
-            <TecnologiesList techs={order(filter(props.techs))}/>
+            {
+                props.techs.length ?
+                <TecnologiesList techs={order(filter(props.techs))}/>
+                : <div className="container">
+                    <img src={spin} alt="cargando"></img>
+                </div>
+            }
         </div>
     );
 }

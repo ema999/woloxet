@@ -23,3 +23,31 @@
     max-width: 167px;
   }
 }
+
+@media (max-width: 1020px) {
+  .Benefits {
+    .container {
+  
+      .benefitsList {
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+      .avatar {
+        height: auto;
+      }
+
+      .txt {
+        font-size: 15px;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .Benefits {
+    margin-top: 30px;
+  }
+}

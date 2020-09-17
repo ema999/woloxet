@@ -48,3 +48,44 @@
     }
   }
 }
+
+@media (max-width: 1020px) {
+  .Woloxers {
+    .container {
+      p {
+        font-size: 19px;
+        max-width: 373px;
+      }
+      .workers {
+        width: 69%;
+        padding: 30px 0 57px 0;
+      }
+
+      .plus {
+        font-size: 23px;
+      }
+
+      .twitter {
+        margin: 24px 0 15px 0;
+        font-size: 14px;
+      }
+
+      .twitter img {
+        max-width: 20px;
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .Woloxers {
+    .container {
+      flex-direction: column;
+      .workers {
+        width: 100%;
+        padding: 30px 0 30px 0;
+      }
+    }
+  }
+}

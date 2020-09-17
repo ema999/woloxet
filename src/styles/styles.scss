@@ -100,3 +100,27 @@ form input:focus, form select:focus {
     box-shadow: yellow;
   }
 }
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .container {
+    max-width: 600px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 630px) {
+  .container {
+    max-width: 250px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+}

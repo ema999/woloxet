@@ -15,6 +15,7 @@
             text-align: right;
             img {
                 max-width: 30px;
+                cursor: pointer;
             }
             span{
                 vertical-align: middle;
@@ -25,5 +26,18 @@
         select {
             width: 200px;
         }
+
+        .loader {
+            background-color: red;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .Tecnologies {
+      .formFilter {
+        flex-direction: column;
+        margin: 0px auto 0 auto;
+      }
     }
 }

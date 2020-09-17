@@ -30,3 +30,18 @@
     }
   }
 }
+
+@media (max-width: 630px) {
+  .Requirements {
+    margin-top: 30px;
+    .container {
+      flex-direction: column;
+      h1 {margin-bottom: 30px;}
+      .requirementItem span{
+        max-width: 65%;
+        vertical-align: top;
+        font-size: 12px;
+      }
+    }
+  }
+}
