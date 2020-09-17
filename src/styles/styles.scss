@@ -29,7 +29,7 @@ li {
   list-style: none;
 }
 
-form input {
+form input, form select {
   padding: 10px 5px;
   border-radius: 5px;
   font-size: 19px;
@@ -37,8 +37,9 @@ form input {
   font-family: 'openSans';
   border: 2px solid $blueSky;
   margin: 10px 0;
+  background-color: white;
 }
-form input:focus {
+form input:focus, form select:focus {
   border-color: $green;
   outline: $green;
 }

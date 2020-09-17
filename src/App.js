@@ -13,6 +13,7 @@ import {
 import Home from './components/screens/Home/Home';
 import Login from './components/screens/Login/Login';
 import Logout from './components/screens/Logout/Logout';
+import Tecnologies from './components/screens/Tecnologies/Tecnologies';
 import PrivateRoute from './routing/PrivateRoute';
 
 
@@ -40,7 +41,7 @@ function App(props) {
             <Home />
           </Route>
           <PrivateRoute path="/tecnologies">
-            <Home />
+            <Tecnologies />
           </PrivateRoute>
           <Route path="/logout">
             <Logout />

@@ -1,0 +1,29 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+
+.Tecnologies {
+    height: 100%;
+
+    .formFilter{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: flex-start;
+        margin: 100px auto 0 auto;
+
+        .order {
+            text-align: right;
+            img {
+                max-width: 30px;
+            }
+            span{
+                vertical-align: middle;
+                margin-left: 10px;
+            }
+        }
+
+        select {
+            width: 200px;
+        }
+    }
+}
