@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 
 import header from '../../../img/header.png';
 import logo from '../../../img/logo.png';
@@ -12,16 +13,21 @@ function Header(props) {
         <header className="Header">
             <div className="container">
                 <div className="top">
-                    <img src={logo} alt="logo"/>
+                <Link to="/"><img src={logo} alt="logo"/></Link>
                     <menu>
                     <ul>
                         {
-                            props.items.map((item) => {
-                                return <li><a href={item.url}> {item.desc} </a></li>;
+                            props.items.map((item, index) => {
+                                return <li key={item.desc + index}><Link to={item.url}> {item.desc} </Link> </li>;
                             })
                         }
                     </ul>
-                    <button className="btn btn-anim">Login</button>
+                    {
+                        props.buttonText && props.buttonUrl ? 
+                        <Link to={props.buttonUrl}>
+                            <button className="btn btn-anim">{props.buttonText}</button>
+                        </Link> : null
+                    }
                     </menu>
                 </div>
 
@@ -44,6 +50,7 @@ function Header(props) {
 Header.propTypes = {
     items: PropTypes.array,
     buttonText: PropTypes.string,
+    buttonUrl: PropTypes.string,
     isJumboActive: PropTypes.bool
 };
  

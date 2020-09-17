@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import Header from '../../commons/Header/Header';
 import Tecno from '../../commons/Tecno/Tecno';
@@ -11,22 +12,32 @@ import Footer from '../../commons/Footer/Footer';
 import './Home.scss';
 
 const MenuItems = [
-    {url: '#home', desc: 'Inicio'},
-    {url: '#aboutus', desc: 'Tecnologías'},
-    {url: '#service', desc: 'Beneficios'},
-    {url: '#products', desc: 'Requerimientos'},
+    {url: '/home', desc: 'Inicio'},
+    {url: '/tecnologies', desc: 'Tecnologías'},
+    {url: '/', desc: 'Beneficios'},
+    {url: '/', desc: 'Requerimientos'},
 ]
  
-function Home() {
+function Home(props) {
  
     return (
         <div className="Home">
 
-            <Header
-                items={MenuItems}
-                buttonText='Login'
-                isJumboActive={true}
-            />
+            {
+                props.isLogged ?
+                <Header
+                    items={MenuItems}
+                    buttonText='Logout'
+                    buttonUrl='/logout'
+                    isJumboActive={true}
+                /> :
+                <Header
+                    items={MenuItems}
+                    buttonText='Login'
+                    buttonUrl='/login'
+                    isJumboActive={true}
+                />
+            }
 
             <Tecno />
             <Woloxers />
@@ -37,5 +48,12 @@ function Home() {
         </div>
     );
 }
- 
-export default Home;
+
+const mapStateToProps = state => ({
+    isLogged: state.auth.token || localStorage.getItem('token'),
+})
+
+const mapDispatchToProps = dispatch => ({
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

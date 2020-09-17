@@ -3,8 +3,6 @@
 
 body {
   font-family: 'openSans';
-  height: 100%;
-  min-height: 100%;
 }
 
 .container {
@@ -29,6 +27,20 @@ ul {
 
 li {
   list-style: none;
+}
+
+form input {
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-size: 19px;
+  width: 97%;
+  font-family: 'openSans';
+  border: 2px solid $blueSky;
+  margin: 10px 0;
+}
+form input:focus {
+  border-color: $green;
+  outline: $green;
 }
 
 .txtBlueSky {

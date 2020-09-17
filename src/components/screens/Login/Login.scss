@@ -1,0 +1,11 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+
+.Login {
+    height: 100%;
+
+    .Footer {
+        position: absolute;
+        bottom: 0;
+    }
+}

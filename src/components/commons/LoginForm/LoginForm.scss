@@ -1,0 +1,38 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+
+.LoginForm {
+    padding: 100px 0;
+
+    form {
+        max-width: 300px;
+        margin: auto;
+
+        .btn {
+            margin: 20px auto;
+            display: block;
+        }
+        
+        .message {
+            text-align: center;
+            font-family: 'openSansSemiBold';
+            font-size: 18px;
+            margin: 30px 0;
+            color: $green;
+        }
+        .messageRed {
+            color: $red;
+        }
+    }
+
+    .spinner {
+        max-width: 100px;
+    }
+
+    #isRemember {
+        width: 30px;
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+}
