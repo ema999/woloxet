@@ -13,7 +13,7 @@ function Header(props) {
         <header className="Header">
             <div className="container">
                 <div className="top">
-                <Link to="/"><img src={logo} alt="logo"/></Link>
+                <Link to="/"><img src={logo} alt="logo" className="logo"/></Link>
                     <menu>
                     <ul>
                         {

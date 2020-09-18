@@ -11,7 +11,7 @@ function Woloxers(props) {
             <div className="workers">
                 <div className="plus txtBlueSky"><span className="txtGreen">350 +</span> Woloxers</div>
                 <div className="twitter"><img src={twitter} alt="twitter"/>@Wolox</div>
-                <button className="btn btn-transparent btn-anim">Siguenos</button>
+                <a href="https://twitter.com/Wolox"><button className="btn btn-transparent btn-anim">Siguenos</button></a>
             </div>
             <p>
                 Trabajamos para <span className="txtBlueSky">convertir</span> <span className="txtGreen">ideas</span> en productos.
